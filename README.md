@@ -25,3 +25,7 @@ Plan better video content with:
 <br><br>
 <br>
 🚀 Start optimizing smarter with Element Opt – simple, helpful, and powered by AI.
+<br><br>
+<br><br>
+<br><br>
+Use python 3.13.3 to run this AI Tool.
