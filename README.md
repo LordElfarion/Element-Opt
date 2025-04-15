@@ -56,8 +56,7 @@ pip install -r requirements.txt
 <br><br>
 Create a .env file in the backend/ directory and add the following variables:
 <br><br>
-OPENAI_API_KEY=your_openai_api_key
-MONGO_URI=your_mongodb_connection_string
+GEMINI_API_KEY=your_gemini_api_key
 <br><br>
 Replace your_openai_api_key and your_mongodb_connection_string with your actual OpenAI API key and MongoDB connection string, respectively.
 <br><br>
