@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Element Opt{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <style> body { background-color: #f9fafb; } </style>
+</head>
+<body class="font-sans leading-normal tracking-normal">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="{{ url_for('index') }}" class="flex items-center">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="AI Content Tool Logo" style="height: 120px; width: auto; margin-right: 8px;">
+                <span class="text-xl font-bold text-blue-600">Element Opt</span>
+            </a>
+            <div>
+                <a href="{{ url_for('shopify_seo_page') }}" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded {% if request.endpoint == 'shopify_seo_page' %}font-semibold text-blue-600{% endif %}">Shopify SEO</a>
+                <a href="{{ url_for('social_media_page') }}" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded {% if request.endpoint == 'social_media_page' %}font-semibold text-blue-600{% endif %}">Social Media</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8 max-w-4xl mt-4">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="text-center p-4 text-gray-500 text-sm mt-8">
+        Element Opt &copy; 2025
+    </footer>
+
+</body>
+</html>

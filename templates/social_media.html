@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Element Opt{% endblock %}
+
+{% block content %}
+<header class="text-center mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Social Media Content Generator</h1>
+    <p class="text-gray-600 mt-2">Enter a topic or product description to generate social media content ideas.</p>
+</header>
+
+<section class="bg-white p-6 rounded-lg shadow-md mb-8">
+    <form id="social-input-form">
+         <div class="mb-4">
+            <label for="social-topic" class="block text-gray-700 text-sm font-bold mb-2">Topic / Product Description:</label>
+            <textarea id="social-topic" name="social-topic" rows="3" required placeholder="Describe your product, service, or content topic..."
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"></textarea>
+        </div>
+         <div class="mb-4">
+            <label for="social-keywords" class="block text-gray-700 text-sm font-bold mb-2">Optional Keywords:</label>
+            <input type="text" id="social-keywords" name="social-keywords" placeholder="e.g., sustainable fashion, handmade jewelry, tech review"
+                   class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+        </div>
+        <div class="mb-6">
+            <label for="social-language" class="block text-gray-700 text-sm font-bold mb-2">Output Language:</label>
+            <select id="social-language" name="social-language"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white">
+                <option value="en" selected>English</option>
+                <option value="ro">Romanian</option>
+            </select>
+        </div>
+        <div id="social-generation-controls" class="mt-6 text-center">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">Generate Content For:</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button type="button" data-platform="youtube" class="social-generate-button bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline transition duration-150 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed">YouTube</button>
+                <button type="button" data-platform="instagram" class="social-generate-button bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline transition duration-150 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed">Instagram / TikTok</button>
+                 <button type="button" data-platform="pinterest" class="social-generate-button bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline transition duration-150 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed">Pinterest</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<hr class="my-8 border-gray-300">
+
+<section id="results-section-social" class="bg-white p-6 rounded-lg shadow-md min-h-[100px]">
+     <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Generated Social Content</h2>
+     <div id="social-loading" class="text-center text-gray-500 py-4" style="display: none;">
+        <svg class="animate-spin h-8 w-8 text-purple-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+        <p class="mt-2">Generating content, please wait...</p>
+    </div>
+     <div id="social-error-message" class="text-center text-red-600 font-semibold py-4" style="display: none;"></div>
+    <div id="social-results-output" class="space-y-6">
+        <p class="text-center text-gray-500 initial-message">Enter a topic and click a platform button above to generate content.</p>
+    </div>
+</section>
+{% endblock %}
