@@ -1,70 +1,74 @@
-<h1>🌐✨ Element Opt – AI-Powered Basic SEO & Content Idea Generator</h1>
-Element Opt is a lightweight, beginner-friendly tool that uses AI to help improve your website's SEO and generate fresh content ideas for social media and video platforms. Perfect for creators, startups, and anyone looking to optimize without the complexity.
-<br><br>
-🔍 Website SEO Checker
-Scan any website and get basic, actionable suggestions to improve search visibility—no technical skills needed.
-<br><br>
-💡 Social Media Content Ideas
-Generate AI-powered ideas for posts across major platforms to keep your content fresh and engaging.
-<br><br>
-🎥 Basic Video SEO Assistant
-<br>
-<br>
-Plan better video content with:
-<br><br>
-✏️ Optimized titles
-<br><br>
-🖼️ Thumbnail ideas
-<br><br>
-🎯 Hooks & outlines
-<br><br>
-🔑 Relevant keywords
-<br><br>
-<br>
-⚠️ Note: Element Opt is currently in its early stages – it's a basic tool with essential features. More powerful options are on the way!
-<br><br>
-<br>
-🚀 Start optimizing smarter with Element Opt – simple, helpful, and powered by AI.
-<br><br>
-<br>
-<h1>⚙️ Backend Setup – Element Opt</h1>
-This is the backend of Element Opt – a simple AI-powered tool that offers website SEO suggestions, content ideas for social media, and basic video optimization tips.
-<br><br>
-🧰 Built With
-<br><br>
-🧠 Python
-<br><br>
-🤖 Gemini API (for content & SEO idea generation)
-<br><br>
-🚀 Getting Started
-<br><br>
-1. Clone the Repository
-<br><br>
-git clone https://github.com/Tlgru/Element-Opt.git
-cd Element-Opt/backend
-<br><br>
-3. Create a Virtual Environment
-<br><br>
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-<br><br>
-3. Install Dependencies
-<br><br>
-pip install -r requirements.txt
-<br><br>
-4. Configure Environment Variables
-<br><br>
-Create a .env file in the backend/ directory and add the following variables:
-<br><br>
-GEMINI_API_KEY=your_gemini_api_key
-<br><br>
-Replace your_openai_api_key and your_mongodb_connection_string with your actual OpenAI API key and MongoDB connection string, respectively.
-<br><br>
-▶️ Run the Server
-<br><br>
-uvicorn main:app --reload
-<br><br>
-The tool will be available to access in your browser at this link:
-<br><br>
-http://localhost:5001
+<h1 align="center">🔍🧠 Element Opt – Lightweight AI-Powered SEO & Content Helper</h1>
 
+<p align="center">
+  <strong>Element Opt</strong> is a basic AI-powered tool that helps you improve your website’s SEO and generate smart content ideas effortlessly. Simple, fast, and useful for small creators and developers looking for quick insights.
+</p>
+
+<br>
+
+<h2>✨ Features</h2>
+
+- 🌐 <strong>Website SEO Analysis</strong><br>
+  Get basic improvement suggestions for any website — from tags to structure.
+
+- ✍️ <strong>AI Content Generator</strong><br>
+  Automatically create text content using AI, tailored for SEO purposes.
+
+- 📱 <strong>Social Media Idea Generator</strong><br>
+  Generate engaging post ideas for platforms like Instagram, TikTok, or Twitter.
+
+- 📹 <strong>Video SEO Suggestions</strong><br>
+  Get basic SEO options for videos including:
+  - 🎯 Title suggestions
+  - 🎬 Video hook & structure ideas
+  - 🖼️ Thumbnail concepts
+  - 🏷️ Relevant keywords
+
+<br>
+
+<h2>⚙️ Tech Overview</h2>
+
+- Built with **Python** and **FastAPI**
+- Uses **GeminiAPI** for content generation
+- Lightweight and easy to extend
+- Designed with simplicity in mind — minimal setup, maximum clarity
+
+<br>
+
+<h2>🚀 Getting Started</h2>
+
+<ol>
+  <li><strong>Clone the repository:</strong><br>
+    <code>git clone https://github.com/Tlgru/Element-Opt</code><br>
+    <code>cd Element-Opt/backend</code>
+  </li>
+  <br>
+  <li><strong>Create a virtual environment:</strong><br>
+    <code>python -m venv venv</code><br>
+    <code>source venv/bin/activate</code>  <em># On Windows: venv\Scripts\activate</em>
+  </li>
+  <br>
+  <li><strong>Install dependencies:</strong><br>
+    <code>pip install -r requirements.txt</code>
+  </li>
+  <br>
+  <li><strong>Run the app:</strong><br>
+    <code>uvicorn main:app --reload</code>
+  </li>
+</ol>
+
+<p>The app should be running at <a href="http://localhost:8000">http://localhost:8000</a></p>
+
+<br>
+
+<h2>📝 Notes</h2>
+
+- This is an early version with basic features — it’s meant to be lightweight and easy to use.
+- More functionality may be added over time as it evolves.
+- Contributions, ideas, and feedback are welcome!
+
+<br>
+
+<p align="center">
+  <em>Simple. Helpful. AI-Powered. That’s Element Opt.</em>
+</p>
