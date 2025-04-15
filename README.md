@@ -34,7 +34,7 @@ This is the backend of Element Opt – a simple AI-powered tool that offers webs
 <br><br>
 🧠 Python
 <br><br>
-🤖 OpenAI API (for content & SEO idea generation)
+🤖 Gemini API (for content & SEO idea generation)
 <br><br>
 🚀 Getting Started
 <br><br>
