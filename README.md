@@ -28,4 +28,43 @@ Plan better video content with:
 <br><br>
 <br><br>
 <br><br>
-Use python 3.13.3 to run this AI Tool.
+<h1>⚙️ Backend Setup – Element Opt</h1>
+This is the backend of Element Opt – a simple AI-powered tool that offers website SEO suggestions, content ideas for social media, and basic video optimization tips.
+
+🧰 Built With
+
+🧠 Python
+
+🤖 OpenAI API (for content & SEO idea generation)
+
+🚀 Getting Started
+1. Clone the Repository
+
+git clone https://github.com/Tlgru/Element-Opt.git
+cd Element-Opt/backend
+
+3. Create a Virtual Environment
+
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+3. Install Dependencies
+
+pip install -r requirements.txt
+
+4. Configure Environment Variables
+Create a .env file in the backend/ directory and add the following variables:
+
+OPENAI_API_KEY=your_openai_api_key
+MONGO_URI=your_mongodb_connection_string
+
+Replace your_openai_api_key and your_mongodb_connection_string with your actual OpenAI API key and MongoDB connection string, respectively.
+
+▶️ Run the Server
+
+uvicorn main:app --reload
+
+The API will be available at:
+
+http://localhost:8000
+
